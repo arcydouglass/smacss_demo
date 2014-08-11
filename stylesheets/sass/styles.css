@@ -72,8 +72,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Layout */
 /* Mixins */
 /* Modules */
-/* line 6, ../../sass/modules/_box.scss */
-#box {
+/* line 7, ../../sass/modules/_box-animation.scss */
+#box-animation {
   width: 100px;
   height: 100px;
   background: blue;
@@ -85,14 +85,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Define animation*/
 /* Chrome, Safari, Opera */
 @-webkit-keyframes transitionOne {
-  /* line 10, ../../sass/mixins/_transition.scss */
+  /* line 9, ../../sass/mixins/_transition.scss */
   from {
     width: 0px;
     height: 0px;
     background: red;
   }
 
-  /* line 15, ../../sass/mixins/_transition.scss */
+  /* line 14, ../../sass/mixins/_transition.scss */
   to {
     width: 100px;
     height: 100px;
@@ -102,14 +102,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* For everything else */
 @keyframes transitionOne {
-  /* line 24, ../../sass/mixins/_transition.scss */
+  /* line 23, ../../sass/mixins/_transition.scss */
   from {
     width: 0px;
     height: 0px;
     background: red;
   }
 
-  /* line 29, ../../sass/mixins/_transition.scss */
+  /* line 28, ../../sass/mixins/_transition.scss */
   to {
     width: 100px;
     height: 100px;

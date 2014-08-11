@@ -13,10 +13,11 @@
 @import "layout/grid";
 
 /* Mixins */
+@import "mixins/box";
 @import "mixins/transition";
 
 /* Modules */
-@import "modules/box";
+@import "modules/box-animation";
 
 /* States */
 @import "states";

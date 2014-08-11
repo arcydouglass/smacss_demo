@@ -1,11 +1,12 @@
 
 @import "../mixins/transition";
+@import "../mixins/box";
 
 $color: blue;
 
-#box {
-	width: 100px;
-	height: 100px;
+#box-animation {
+	@include box;
+
 	background: $color;
 
 	/* Chrome, Safari, Opera */

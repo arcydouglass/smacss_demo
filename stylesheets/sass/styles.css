@@ -1,7 +1,8 @@
-/* Welcome to Compass.
+/* 
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Compass */
 /* line 17, ../../../../../Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,7 +68,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 15, ../../sass/master.scss */
-p {
-  color: red;
+/* Base */
+/* Layout */
+/* Mixins */
+/* Modules */
+/* line 6, ../../sass/modules/_box.scss */
+#box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOne 3s;
+  animation: transitionOne 3s;
 }
+
+/* Define animation*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes transitionOne {
+  /* line 10, ../../sass/mixins/_transition.scss */
+  from {
+    width: 0px;
+    height: 0px;
+    background: red;
+  }
+
+  /* line 15, ../../sass/mixins/_transition.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background: blue;
+  }
+}
+
+/* For everything else */
+@keyframes transitionOne {
+  /* line 24, ../../sass/mixins/_transition.scss */
+  from {
+    width: 0px;
+    height: 0px;
+    background: red;
+  }
+
+  /* line 29, ../../sass/mixins/_transition.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background: blue;
+  }
+}
+
+/* States */

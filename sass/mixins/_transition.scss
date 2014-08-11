@@ -1,0 +1,36 @@
+
+
+@mixin transition ($endingColor: blue){
+
+	$startingColor: red;
+
+	/* Define animation*/
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes transitionOne {
+		from {
+			width: 0px;
+			height: 0px;
+			background: $startingColor; 
+		}
+		to {
+			width: 100px;
+			height: 100px;
+			background: $endingColor;
+		}
+	}
+
+	/* For everything else */
+	@keyframes transitionOne {
+		from {
+			width: 0px;
+			height: 0px;
+			background: $startingColor; 
+		}
+		to {
+			width: 100px;
+			height: 100px;
+			background: $endingColor;
+		}
+	}
+
+}

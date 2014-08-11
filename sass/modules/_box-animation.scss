@@ -16,6 +16,12 @@ $color: blue;
 
 }
 
+#box-animation:hover {
+	opacity: .75;
+}
+
+
+
 @include transition($color);
 
 

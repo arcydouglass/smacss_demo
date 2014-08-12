@@ -1,0 +1,27 @@
+
+@mixin transition-colorFade ($color:blue){
+
+	$startingColor: white;
+
+	/* Define animation*/
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes transitionColorFade {
+		from {
+			background: $startingColor; 
+		}
+		to {
+			background: $color;
+		}
+	}
+
+	/* For everything else */
+	@keyframes transitionColorFade {
+		from {
+			background: $startingColor; 
+		}
+		to {
+			background: $color;
+		}
+	}
+
+}

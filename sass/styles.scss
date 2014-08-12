@@ -8,18 +8,19 @@
 
 /* Base */
 @import "base/normalize";
-@import "base/base";
 
 /* Layout */
-@import "layout/grid";
 
 /* Mixins */
 @import "mixins/box";
-@import "mixins/transition";
+@import "mixins/transition-opacity";
+@import "mixins/transition-spin";
+@import "mixins/box-prototype";
 
 /* Modules */
-@import "modules/box-animation";
 @import "modules/logo-animation";
+@import "modules/box-modules";
+
 /* States */
 @import "states";
 

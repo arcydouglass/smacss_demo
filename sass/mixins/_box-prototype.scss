@@ -1,0 +1,17 @@
+
+@import "box";
+
+@mixin box-prototype ($color) {
+
+	@include box;
+
+	background: $color;
+
+	/* Chrome, Safari, Opera */
+	-webkit-animation: transitionOpacity 2s;
+	
+	animation: transitionOpacity 2s;
+
+}
+
+

@@ -508,111 +508,139 @@ th {
 /* Layout */
 /* Mixins */
 /* Modules */
-/* line 7, ../../sass/modules/_box-animation.scss */
-#box-animation {
-  width: 500px;
-  height: 500px;
-  margin: 20px;
-  background: blue;
-  /* Chrome, Safari, Opera */
-  -webkit-animation: transitionOne 3s;
-  animation: transitionOne 3s;
-}
-
-/* line 19, ../../sass/modules/_box-animation.scss */
-#box-animation:hover {
-  opacity: .75;
-}
-
-/* Define animation*/
-/* Chrome, Safari, Opera */
-@-webkit-keyframes transitionOne {
-  /* line 9, ../../sass/mixins/_transition.scss */
-  from {
-    width: 0px;
-    height: 0px;
-    background: red;
-  }
-
-  /* line 14, ../../sass/mixins/_transition.scss */
-  to {
-    width: 100px;
-    height: 100px;
-    background: blue;
-  }
-}
-
-/* For everything else */
-@keyframes transitionOne {
-  /* line 23, ../../sass/mixins/_transition.scss */
-  from {
-    width: 0px;
-    height: 0px;
-    background: red;
-  }
-
-  /* line 28, ../../sass/mixins/_transition.scss */
-  to {
-    width: 100px;
-    height: 100px;
-    background: blue;
-  }
-}
-
-/* line 1, ../../sass/modules/_logo-animation.scss */
+/* line 3, ../../sass/modules/_logo-animation.scss */
 .logo-animation {
   margin: 20px;
   width: 100px;
   height: 100px;
   background: white;
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 40000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 40000ms;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 40000ms;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  -o-transition: rotate(3600deg);
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transition-spin 6s linear infinite;
+  animation: transition-spin 6s linear infinite;
 }
 
-@-moz-keyframes spin {
-  /* line 23, ../../sass/modules/_logo-animation.scss */
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  /* line 24, ../../sass/modules/_logo-animation.scss */
-  to {
-    -moz-transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  /* line 27, ../../sass/modules/_logo-animation.scss */
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-
-  /* line 28, ../../sass/modules/_logo-animation.scss */
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  /* line 31, ../../sass/modules/_logo-animation.scss */
+/* Define animation*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes transition-spin {
+  /* line 7, ../../sass/mixins/_transition-spin.scss */
   from {
     transform: rotate(0deg);
   }
 
-  /* line 32, ../../sass/modules/_logo-animation.scss */
+  /* line 10, ../../sass/mixins/_transition-spin.scss */
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* For everything else */
+@keyframes transition-spin {
+  /* line 17, ../../sass/mixins/_transition-spin.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 20, ../../sass/mixins/_transition-spin.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Cyan Box */
+/* line 8, ../../sass/modules/_box-modules.scss */
+#box-cyan {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  background: cyan;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 2s;
+  animation: transitionOpacity 2s;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 2s;
+  animation: transitionOpacity 2s;
+}
+
+/* line 18, ../../sass/modules/_box-modules.scss */
+#box-cyan:hover {
+  opacity: .6;
+}
+
+/* Magenta Box */
+/* line 24, ../../sass/modules/_box-modules.scss */
+#box-magenta {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  background: magenta;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 2s;
+  animation: transitionOpacity 2s;
+}
+
+/* line 28, ../../sass/modules/_box-modules.scss */
+#box-magenta:hover {
+  opacity: .6;
+}
+
+/* Yellow Box */
+/* line 34, ../../sass/modules/_box-modules.scss */
+#box-yellow {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  background: yellow;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 2s;
+  animation: transitionOpacity 2s;
+}
+
+/* line 38, ../../sass/modules/_box-modules.scss */
+#box-yellow:hover {
+  opacity: .6;
+}
+
+/* Black Box */
+/* line 44, ../../sass/modules/_box-modules.scss */
+#box-black {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  background: black;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 2s;
+  animation: transitionOpacity 2s;
+}
+
+/* line 48, ../../sass/modules/_box-modules.scss */
+#box-black:hover {
+  opacity: .6;
+}
+
+/* Define animation*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes transitionOpacity {
+  /* line 7, ../../sass/mixins/_transition-opacity.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 10, ../../sass/mixins/_transition-opacity.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* For everything else */
+@keyframes transitionOpacity {
+  /* line 17, ../../sass/mixins/_transition-opacity.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 20, ../../sass/mixins/_transition-opacity.scss */
+  to {
+    opacity: 1;
   }
 }
 

@@ -505,6 +505,11 @@ th {
   padding: 0;
 }
 
+/* line 2, ../../sass/base/_base.scss */
+body {
+  background: white;
+}
+
 /* Layout */
 /* Mixins */
 /* Modules */
@@ -564,6 +569,7 @@ th {
 /* line 18, ../../sass/modules/_box-modules.scss */
 #box-cyan:hover {
   opacity: .6;
+  transform: scale(1.01);
 }
 
 /* Magenta Box */
@@ -581,6 +587,7 @@ th {
 /* line 28, ../../sass/modules/_box-modules.scss */
 #box-magenta:hover {
   opacity: .6;
+  transform: scale(1.01);
 }
 
 /* Yellow Box */
@@ -598,6 +605,7 @@ th {
 /* line 38, ../../sass/modules/_box-modules.scss */
 #box-yellow:hover {
   opacity: .6;
+  transform: scale(1.01);
 }
 
 /* Black Box */
@@ -615,6 +623,7 @@ th {
 /* line 48, ../../sass/modules/_box-modules.scss */
 #box-black:hover {
   opacity: .6;
+  transform: scale(1.01);
 }
 
 /* Define animation*/

@@ -1,6 +1,9 @@
+@import "../states";
 
 .title {
 	display: inline-block;
+	background: white;
+
 }
 
 .title h1 {
@@ -10,7 +13,10 @@
 }
 
 .title h2 {
-	width: 700px;
+	width: 900px;
 	font-size: 1.5em;
 
+	@media #{$media} and ($feature: $value) { 
+		display: none;
+	}  
 }

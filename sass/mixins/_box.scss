@@ -1,11 +1,23 @@
+@import "../states";
 
 @mixin box {
 	display: block; 
-	height: 400px; 
+	height: 400px;
 	width: 400px;
 	margin: 20px; 
 	color: gray;
 	overflow: hidden; 
-}
 
+	@media #{$media} and ($feature: $value) {  
+	    height: $size;
+		width: $size;
+		margin: $size/20; 
+	 }  
+  
+	 @media #{$media} and ($feature: $value2) {  
+	    height: $size2;
+		width: $size2;
+		margin: $size/20; 
+	  }  
+}
 

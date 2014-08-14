@@ -1,9 +1,22 @@
+@import "../states";
 
 @mixin box-hover {
 
 	.color-name { 
 		margin-top: -200px; 
 		opacity: 0; 
-	}
 
+		@media #{$media} and ($feature: $value) {  
+			margin-top: -$size2 * 1.05; 
+		 }  
+	  
+		@media #{$media} and ($feature: $value2) {  
+			margin-top: -$size2 * 1.05; 
+		}  
+
+	}
 }
+
+
+
+

@@ -1,9 +1,20 @@
 
+@import "../states";
+
 @mixin slide-up-boxes-hover {
 
 	.slide-up-boxes section:hover h5 { 
 		margin-top: -200px; 
 		opacity: 0; 
+
+		@media #{$media} and ($feature: $value) {  
+			margin-top: -$size/ 2;
+			
+		 }  
+	  
+		@media #{$media} and ($feature: $value2) {  
+			margin-top: -$size/ 2;
+		}  
 	}
 
 }

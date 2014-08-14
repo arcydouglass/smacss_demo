@@ -505,77 +505,51 @@ th {
   padding: 0;
 }
 
-/* line 2, ../../sass/base/_base.scss */
+/* line 3, ../../sass/base/_base.scss */
 body {
-  background: white;
+  /*background-color: white; */
+  /*@include background-image(linear-gradient(top, white, lightgray));*/
+  background: url(../../images/background3.png);
   font-family: helvetica, sans-serif;
 }
 
-/* line 7, ../../sass/base/_base.scss */
+/* line 10, ../../sass/base/_base.scss */
 .container {
   max-width: 960px;
 }
 
-/*.slide-up-boxes section { 
-		display: block; 
-		height: 400px; 
-		width: 400px;
-		margin: 0 0 20px 0; 
-		background: cyan; 
-		color: gray;
-		overflow: hidden; 
-	}
-
-	.slide-up-boxes section:hover h5 { 
-		margin-top: -200px; 
-		opacity: 0; 
-	}
-
-	.slide-up-boxes h5 { 
-		height: 400px;
-		text-align: center;
-		margin: 350px 0 0 0;
-		text-decoration: none;
-		font-size: 1.4em;
-		opacity: 1;
-		-webkit-transition: all 0.2s linear; 
-		transition: all 0.2s linear; 
-	
-	}
-
-
-	.slide-up-boxes div {
-		height: 100px;
-		width: 380px;
-		float: left;
-		text-align: center;
-		color: lightgray;
-		padding: 10px 10px;
-		margin: 100px 0 0 0;
-		background-color:rgba(72,72,72,0.5);
-		font-size: .9em;
-	}
-
-*/
 /* Layout */
 /* Mixins */
+/*Media Query Variables */
+/*Media Query Variables */
+/*Media Query Variables */
+/*Media Query Variables */
+/*Media Query Variables */
 /* Modules */
-/* line 2, ../../sass/modules/_title.scss */
+/*Media Query Variables */
+/* line 3, ../../sass/modules/_title.scss */
 .title {
   display: inline-block;
+  background: white;
 }
 
-/* line 6, ../../sass/modules/_title.scss */
+/* line 9, ../../sass/modules/_title.scss */
 .title h1 {
   font-size: 2.5em;
   font-weight: bold;
   margin: 30px 0 10px 0;
 }
 
-/* line 12, ../../sass/modules/_title.scss */
+/* line 15, ../../sass/modules/_title.scss */
 .title h2 {
-  width: 700px;
+  width: 900px;
   font-size: 1.5em;
+}
+@media screen and (max-width: 992px) {
+  /* line 15, ../../sass/modules/_title.scss */
+  .title h2 {
+    display: none;
+  }
 }
 
 /* line 3, ../../sass/modules/_logo-animation.scss */
@@ -583,7 +557,7 @@ body {
   margin: 20px;
   width: 100px;
   height: 100px;
-  background: white;
+  background: transparent;
   float: left;
   /* Chrome, Safari, Opera */
   -webkit-animation: transition-spin 6s linear infinite;
@@ -617,6 +591,11 @@ body {
   }
 }
 
+/*Media Query Variables */
+/*Media Query Variables */
+/*Media Query Variables */
+/*Media Query Variables */
+/*Media Query Variables */
 /* Cyan Box */
 /* line 11, ../../sass/modules/_box-modules.scss */
 #box-cyan {
@@ -632,19 +611,49 @@ body {
   animation: transitionOpacity 2s;
   /*@include slide-up-boxes;*/
 }
-/* line 4, ../../sass/mixins/_slide-up-boxes.scss */
-#box-cyan .color-name {
+@media screen and (max-width: 992px) {
+  /* line 11, ../../sass/modules/_box-modules.scss */
+  #box-cyan {
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 11, ../../sass/modules/_box-modules.scss */
+  #box-cyan {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
+/* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+#box-cyan > .color-name {
   height: 400px;
   text-align: center;
-  margin: 350px 0 0 0;
+  margin-top: 350px;
   text-decoration: none;
   font-size: 1.4em;
   opacity: 1;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 16, ../../sass/mixins/_slide-up-boxes.scss */
-#box-cyan .summary {
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-cyan > .color-name {
+    height: 300px;
+    margin-top: 262.5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-cyan > .color-name {
+    height: 200px;
+    margin-top: 175px;
+  }
+}
+/* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+#box-cyan > .summary {
   height: 100px;
   text-align: center;
   color: lightgray;
@@ -653,15 +662,41 @@ body {
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
 }
+@media screen and (max-width: 992px) {
+  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-cyan > .summary {
+    height: 210px;
+    margin: 100px -15px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-cyan > .summary {
+    height: 210px;
+    margin: 200px -15px 0;
+  }
+}
 
 /* line 16, ../../sass/modules/_box-modules.scss */
 #box-cyan:hover {
   /*@include slide-up-boxes-hover;*/
 }
-/* line 4, ../../sass/mixins/_box-hover.scss */
+/* line 5, ../../sass/mixins/_box-hover.scss */
 #box-cyan:hover .color-name {
   margin-top: -200px;
   opacity: 0;
+}
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-cyan:hover .color-name {
+    margin-top: -210px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-cyan:hover .color-name {
+    margin-top: -210px;
+  }
 }
 
 /* Magenta Box */
@@ -679,19 +714,49 @@ body {
   animation: transitionOpacity 2s;
   /*@include slide-up-boxes;*/
 }
-/* line 4, ../../sass/mixins/_slide-up-boxes.scss */
-#box-magenta .color-name {
+@media screen and (max-width: 992px) {
+  /* line 23, ../../sass/modules/_box-modules.scss */
+  #box-magenta {
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 23, ../../sass/modules/_box-modules.scss */
+  #box-magenta {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
+/* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+#box-magenta > .color-name {
   height: 400px;
   text-align: center;
-  margin: 350px 0 0 0;
+  margin-top: 350px;
   text-decoration: none;
   font-size: 1.4em;
   opacity: 1;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 16, ../../sass/mixins/_slide-up-boxes.scss */
-#box-magenta .summary {
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-magenta > .color-name {
+    height: 300px;
+    margin-top: 262.5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-magenta > .color-name {
+    height: 200px;
+    margin-top: 175px;
+  }
+}
+/* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+#box-magenta > .summary {
   height: 100px;
   text-align: center;
   color: lightgray;
@@ -700,15 +765,41 @@ body {
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
 }
+@media screen and (max-width: 992px) {
+  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-magenta > .summary {
+    height: 210px;
+    margin: 100px -15px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-magenta > .summary {
+    height: 210px;
+    margin: 200px -15px 0;
+  }
+}
 
 /* line 28, ../../sass/modules/_box-modules.scss */
 #box-magenta:hover {
   /*@include slide-up-boxes-hover;*/
 }
-/* line 4, ../../sass/mixins/_box-hover.scss */
+/* line 5, ../../sass/mixins/_box-hover.scss */
 #box-magenta:hover .color-name {
   margin-top: -200px;
   opacity: 0;
+}
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-magenta:hover .color-name {
+    margin-top: -210px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-magenta:hover .color-name {
+    margin-top: -210px;
+  }
 }
 
 /* Yellow Box */
@@ -726,19 +817,49 @@ body {
   animation: transitionOpacity 2s;
   /*@include slide-up-boxes;*/
 }
-/* line 4, ../../sass/mixins/_slide-up-boxes.scss */
-#box-yellow .color-name {
+@media screen and (max-width: 992px) {
+  /* line 35, ../../sass/modules/_box-modules.scss */
+  #box-yellow {
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 35, ../../sass/modules/_box-modules.scss */
+  #box-yellow {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
+/* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+#box-yellow > .color-name {
   height: 400px;
   text-align: center;
-  margin: 350px 0 0 0;
+  margin-top: 350px;
   text-decoration: none;
   font-size: 1.4em;
   opacity: 1;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 16, ../../sass/mixins/_slide-up-boxes.scss */
-#box-yellow .summary {
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-yellow > .color-name {
+    height: 300px;
+    margin-top: 262.5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-yellow > .color-name {
+    height: 200px;
+    margin-top: 175px;
+  }
+}
+/* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+#box-yellow > .summary {
   height: 100px;
   text-align: center;
   color: lightgray;
@@ -747,15 +868,41 @@ body {
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
 }
+@media screen and (max-width: 992px) {
+  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-yellow > .summary {
+    height: 210px;
+    margin: 100px -15px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-yellow > .summary {
+    height: 210px;
+    margin: 200px -15px 0;
+  }
+}
 
 /* line 40, ../../sass/modules/_box-modules.scss */
 #box-yellow:hover {
   /*@include slide-up-boxes-hover;*/
 }
-/* line 4, ../../sass/mixins/_box-hover.scss */
+/* line 5, ../../sass/mixins/_box-hover.scss */
 #box-yellow:hover .color-name {
   margin-top: -200px;
   opacity: 0;
+}
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-yellow:hover .color-name {
+    margin-top: -210px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-yellow:hover .color-name {
+    margin-top: -210px;
+  }
 }
 
 /* Black Box */
@@ -773,19 +920,49 @@ body {
   animation: transitionOpacity 2s;
   /*@include slide-up-boxes;*/
 }
-/* line 4, ../../sass/mixins/_slide-up-boxes.scss */
-#box-black .color-name {
+@media screen and (max-width: 992px) {
+  /* line 47, ../../sass/modules/_box-modules.scss */
+  #box-black {
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 47, ../../sass/modules/_box-modules.scss */
+  #box-black {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
+/* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+#box-black > .color-name {
   height: 400px;
   text-align: center;
-  margin: 350px 0 0 0;
+  margin-top: 350px;
   text-decoration: none;
   font-size: 1.4em;
   opacity: 1;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 16, ../../sass/mixins/_slide-up-boxes.scss */
-#box-black .summary {
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-black > .color-name {
+    height: 300px;
+    margin-top: 262.5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-black > .color-name {
+    height: 200px;
+    margin-top: 175px;
+  }
+}
+/* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+#box-black > .summary {
   height: 100px;
   text-align: center;
   color: lightgray;
@@ -794,15 +971,41 @@ body {
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
 }
+@media screen and (max-width: 992px) {
+  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-black > .summary {
+    height: 210px;
+    margin: 100px -15px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-black > .summary {
+    height: 210px;
+    margin: 200px -15px 0;
+  }
+}
 
 /* line 52, ../../sass/modules/_box-modules.scss */
 #box-black:hover {
   /*@include slide-up-boxes-hover;*/
 }
-/* line 4, ../../sass/mixins/_box-hover.scss */
+/* line 5, ../../sass/mixins/_box-hover.scss */
 #box-black:hover .color-name {
   margin-top: -200px;
   opacity: 0;
+}
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-black:hover .color-name {
+    margin-top: -210px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-black:hover .color-name {
+    margin-top: -210px;
+  }
 }
 
 /* Define animation*/
@@ -833,3 +1036,4 @@ body {
 }
 
 /* States */
+/*Media Query Variables */

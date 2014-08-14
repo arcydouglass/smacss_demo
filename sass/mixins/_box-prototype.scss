@@ -1,5 +1,6 @@
 
 @import "box";
+@import "slide-up-boxes";
 
 @mixin box-prototype ($color) {
 
@@ -11,6 +12,8 @@
 	-webkit-animation: transitionOpacity 2s;
 	
 	animation: transitionOpacity 2s;
+
+	@include slide-up-boxes;
 
 }
 

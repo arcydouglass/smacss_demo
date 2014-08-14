@@ -1,8 +1,11 @@
 
 @mixin box {
+	display: block; 
+	height: 400px; 
 	width: 400px;
-	height: 400px;
-	margin: 20px;
+	margin: 20px; 
+	color: gray;
+	overflow: hidden; 
 }
 
 

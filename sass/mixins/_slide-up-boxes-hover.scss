@@ -1,0 +1,9 @@
+
+@mixin slide-up-boxes-hover {
+
+	.slide-up-boxes section:hover h5 { 
+		margin-top: -200px; 
+		opacity: 0; 
+	}
+
+}

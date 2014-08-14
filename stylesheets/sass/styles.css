@@ -508,17 +508,83 @@ th {
 /* line 2, ../../sass/base/_base.scss */
 body {
   background: white;
+  font-family: helvetica, sans-serif;
 }
 
+/* line 7, ../../sass/base/_base.scss */
+.container {
+  max-width: 960px;
+}
+
+/*.slide-up-boxes section { 
+		display: block; 
+		height: 400px; 
+		width: 400px;
+		margin: 0 0 20px 0; 
+		background: cyan; 
+		color: gray;
+		overflow: hidden; 
+	}
+
+	.slide-up-boxes section:hover h5 { 
+		margin-top: -200px; 
+		opacity: 0; 
+	}
+
+	.slide-up-boxes h5 { 
+		height: 400px;
+		text-align: center;
+		margin: 350px 0 0 0;
+		text-decoration: none;
+		font-size: 1.4em;
+		opacity: 1;
+		-webkit-transition: all 0.2s linear; 
+		transition: all 0.2s linear; 
+	
+	}
+
+
+	.slide-up-boxes div {
+		height: 100px;
+		width: 380px;
+		float: left;
+		text-align: center;
+		color: lightgray;
+		padding: 10px 10px;
+		margin: 100px 0 0 0;
+		background-color:rgba(72,72,72,0.5);
+		font-size: .9em;
+	}
+
+*/
 /* Layout */
 /* Mixins */
 /* Modules */
+/* line 2, ../../sass/modules/_title.scss */
+.title {
+  display: inline-block;
+}
+
+/* line 6, ../../sass/modules/_title.scss */
+.title h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 30px 0 10px 0;
+}
+
+/* line 12, ../../sass/modules/_title.scss */
+.title h2 {
+  width: 700px;
+  font-size: 1.5em;
+}
+
 /* line 3, ../../sass/modules/_logo-animation.scss */
 .logo-animation {
   margin: 20px;
   width: 100px;
   height: 100px;
   background: white;
+  float: left;
   /* Chrome, Safari, Opera */
   -webkit-animation: transition-spin 6s linear infinite;
   animation: transition-spin 6s linear infinite;
@@ -552,78 +618,191 @@ body {
 }
 
 /* Cyan Box */
-/* line 8, ../../sass/modules/_box-modules.scss */
+/* line 11, ../../sass/modules/_box-modules.scss */
 #box-cyan {
-  width: 400px;
+  display: block;
   height: 400px;
+  width: 400px;
   margin: 20px;
+  color: gray;
+  overflow: hidden;
   background: cyan;
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
-  /* Chrome, Safari, Opera */
-  -webkit-animation: transitionOpacity 2s;
-  animation: transitionOpacity 2s;
+  /*@include slide-up-boxes;*/
+}
+/* line 4, ../../sass/mixins/_slide-up-boxes.scss */
+#box-cyan .color-name {
+  height: 400px;
+  text-align: center;
+  margin: 350px 0 0 0;
+  text-decoration: none;
+  font-size: 1.4em;
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 16, ../../sass/mixins/_slide-up-boxes.scss */
+#box-cyan .summary {
+  height: 100px;
+  text-align: center;
+  color: lightgray;
+  padding: 10px 10px;
+  margin: 100px 0 -20px 0;
+  background-color: rgba(72, 72, 72, 0.5);
+  font-size: 1.0em;
 }
 
-/* line 18, ../../sass/modules/_box-modules.scss */
+/* line 16, ../../sass/modules/_box-modules.scss */
 #box-cyan:hover {
-  opacity: .6;
-  transform: scale(1.01);
+  /*@include slide-up-boxes-hover;*/
+}
+/* line 4, ../../sass/mixins/_box-hover.scss */
+#box-cyan:hover .color-name {
+  margin-top: -200px;
+  opacity: 0;
 }
 
 /* Magenta Box */
-/* line 24, ../../sass/modules/_box-modules.scss */
+/* line 23, ../../sass/modules/_box-modules.scss */
 #box-magenta {
-  width: 400px;
+  display: block;
   height: 400px;
+  width: 400px;
   margin: 20px;
+  color: gray;
+  overflow: hidden;
   background: magenta;
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
+  /*@include slide-up-boxes;*/
+}
+/* line 4, ../../sass/mixins/_slide-up-boxes.scss */
+#box-magenta .color-name {
+  height: 400px;
+  text-align: center;
+  margin: 350px 0 0 0;
+  text-decoration: none;
+  font-size: 1.4em;
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 16, ../../sass/mixins/_slide-up-boxes.scss */
+#box-magenta .summary {
+  height: 100px;
+  text-align: center;
+  color: lightgray;
+  padding: 10px 10px;
+  margin: 100px 0 -20px 0;
+  background-color: rgba(72, 72, 72, 0.5);
+  font-size: 1.0em;
 }
 
 /* line 28, ../../sass/modules/_box-modules.scss */
 #box-magenta:hover {
-  opacity: .6;
-  transform: scale(1.01);
+  /*@include slide-up-boxes-hover;*/
+}
+/* line 4, ../../sass/mixins/_box-hover.scss */
+#box-magenta:hover .color-name {
+  margin-top: -200px;
+  opacity: 0;
 }
 
 /* Yellow Box */
-/* line 34, ../../sass/modules/_box-modules.scss */
+/* line 35, ../../sass/modules/_box-modules.scss */
 #box-yellow {
-  width: 400px;
+  display: block;
   height: 400px;
+  width: 400px;
   margin: 20px;
+  color: gray;
+  overflow: hidden;
   background: yellow;
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
+  /*@include slide-up-boxes;*/
+}
+/* line 4, ../../sass/mixins/_slide-up-boxes.scss */
+#box-yellow .color-name {
+  height: 400px;
+  text-align: center;
+  margin: 350px 0 0 0;
+  text-decoration: none;
+  font-size: 1.4em;
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 16, ../../sass/mixins/_slide-up-boxes.scss */
+#box-yellow .summary {
+  height: 100px;
+  text-align: center;
+  color: lightgray;
+  padding: 10px 10px;
+  margin: 100px 0 -20px 0;
+  background-color: rgba(72, 72, 72, 0.5);
+  font-size: 1.0em;
 }
 
-/* line 38, ../../sass/modules/_box-modules.scss */
+/* line 40, ../../sass/modules/_box-modules.scss */
 #box-yellow:hover {
-  opacity: .6;
-  transform: scale(1.01);
+  /*@include slide-up-boxes-hover;*/
+}
+/* line 4, ../../sass/mixins/_box-hover.scss */
+#box-yellow:hover .color-name {
+  margin-top: -200px;
+  opacity: 0;
 }
 
 /* Black Box */
-/* line 44, ../../sass/modules/_box-modules.scss */
+/* line 47, ../../sass/modules/_box-modules.scss */
 #box-black {
-  width: 400px;
+  display: block;
   height: 400px;
+  width: 400px;
   margin: 20px;
+  color: gray;
+  overflow: hidden;
   background: black;
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
+  /*@include slide-up-boxes;*/
+}
+/* line 4, ../../sass/mixins/_slide-up-boxes.scss */
+#box-black .color-name {
+  height: 400px;
+  text-align: center;
+  margin: 350px 0 0 0;
+  text-decoration: none;
+  font-size: 1.4em;
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 16, ../../sass/mixins/_slide-up-boxes.scss */
+#box-black .summary {
+  height: 100px;
+  text-align: center;
+  color: lightgray;
+  padding: 10px 10px;
+  margin: 100px 0 -20px 0;
+  background-color: rgba(72, 72, 72, 0.5);
+  font-size: 1.0em;
 }
 
-/* line 48, ../../sass/modules/_box-modules.scss */
+/* line 52, ../../sass/modules/_box-modules.scss */
 #box-black:hover {
-  opacity: .6;
-  transform: scale(1.01);
+  /*@include slide-up-boxes-hover;*/
+}
+/* line 4, ../../sass/mixins/_box-hover.scss */
+#box-black:hover .color-name {
+  margin-top: -200px;
+  opacity: 0;
 }
 
 /* Define animation*/

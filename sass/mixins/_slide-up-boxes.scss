@@ -1,0 +1,25 @@
+
+@mixin slide-up-boxes {
+
+	.color-name { 
+		height: 400px;
+		text-align: center;
+		margin: 350px 0 0 0;
+		text-decoration: none;
+		font-size: 1.4em;
+		opacity: 1;
+		-webkit-transition: all 0.2s linear; 
+		transition: all 0.2s linear; 
+	}
+
+
+	 .summary {
+		height: 100px;
+		text-align: center;
+		color: lightgray;
+		padding: 10px 10px;
+		margin: 100px 0 -20px 0;
+		background-color:rgba(72,72,72,0.5);
+		font-size: 1.0em;
+	}
+}

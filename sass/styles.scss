@@ -17,10 +17,14 @@
 @import "mixins/transition-opacity";
 @import "mixins/transition-spin";
 @import "mixins/box-prototype";
+@import "mixins/slide-up-boxes";
+@import "mixins/slide-up-boxes-hover";
 
 /* Modules */
+@import "modules/title";
 @import "modules/logo-animation";
 @import "modules/box-modules";
+
 
 /* States */
 @import "states";

@@ -1,57 +1,64 @@
 
+
 @import "../mixins/box-prototype";
 @import "../mixins/box-hover";
+@import "../mixins/slide-up-boxes";
+@import "../mixins/slide-up-boxes-hover";
 	
 
 
 /* Cyan Box */
 #box-cyan {
 	@include box-prototype(cyan);
-
-	/* Chrome, Safari, Opera */
-	-webkit-animation: transitionOpacity 2s;
-	
-	animation: transitionOpacity 2s;
-
+	/*@include slide-up-boxes;*/
 }
 
 #box-cyan:hover {
 	@include box-hover;
+	/*@include slide-up-boxes-hover;*/
 }
 
 
 /* Magenta Box */
 #box-magenta {
 	@include box-prototype(magenta);
+	/*@include slide-up-boxes;*/
 }
 
 #box-magenta:hover {
 	@include box-hover;
+	/*@include slide-up-boxes-hover;*/
 }
 
 
 /* Yellow Box */
 #box-yellow {
 	@include box-prototype(yellow);
+	/*@include slide-up-boxes;*/
 }
 
 #box-yellow:hover {
 	@include box-hover;
+	/*@include slide-up-boxes-hover;*/
 }
 
 
 /* Black Box */
 #box-black {
 	@include box-prototype(black);
+	/*@include slide-up-boxes;*/
 }
 
 #box-black:hover {
 	@include box-hover;
+	/*@include slide-up-boxes-hover;*/
 }
 
 
 
 @include transition-opacity;
+
+
 
 
 

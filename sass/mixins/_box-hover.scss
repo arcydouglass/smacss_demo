@@ -1,7 +1,9 @@
 
 @mixin box-hover {
 
-	opacity: .6;
-	transform: scale(1.01);
+	.color-name { 
+		margin-top: -200px; 
+		opacity: 0; 
+	}
 
 }

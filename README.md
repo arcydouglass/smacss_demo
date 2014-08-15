@@ -8,6 +8,13 @@ And Syntactically Awesome Style Sheets (SASS):
 
 http://sass-lang.com/
 
+To see the finished project:
+
+http://arcydouglass.github.io/smacss_demo/
+
+####Design
+
+I chose a modular design to highlight the modular structure of SMACSS's CSS organization.  This would make it easy to see how the same modules are used over and over with only small differenences. Also, because this was a relatively simple app, I did not need any menus but more information is available by clicking on the squares.
 
 ####Structure
 
@@ -15,7 +22,7 @@ The combination of SMACSS and SASS makes CSS much more like a like a programming
 
 In order to take advantage of the power of SASS, I added another category called mixins. Mixins are small snippets of code that can be repeated every time the mixin is called. SASS also brings the power of variables and mixins, which is the ability to reuse chunks of code.
 
-By splitting the CSS into its core pieces, I found that the CSS was easier to read and easier to edit.
+By splitting the CSS into its core pieces, I found that the CSS was easier to read and easier to edit. The complexity of the project was able to increase while maintaining legibility and editability.
 
  
 ####Mixins and Modules
@@ -32,21 +39,15 @@ Since the code for each module was very small, I combined related modules togeth
 
 ####HTML ID / Classes
 
-I found that my HTML classes were more descriptive to represent the added specificity of the SMACSS modules. One of the surprising things was that every time I wanted to have an object of a different color, I had to have a new class.  In a programming language, the color might have been stored in an array, which would have allowed a simple way to create a series of classes that are the same except for a change in color. Even CSS like @extend would still require an individual class for each color.
+I found that my HTML classes were more descriptive to represent the added specificity of the SMACSS modules. One of the surprising things was that every time I wanted to have an object of a different color, I had to have a new class.  In a programming language, the color might have been stored in an array, which would have allowed a simple way to create a series of classes that are the same except for a change in color. 
 
-Still, this was a huge improvement over standard CSS.
+####Lessons
 
-Talk about maps and lists.
+While SASS does not have arrays per se it does have maps and lists that would have allowed me to reduce some of the repetitive modules.  I was not able to implement that on this project but I would like to on the next project.
 
-Reduce repetition.
+The media query variables are included in the _state.scss file while the implementation of the query is handled in the releveant module. I wonder if there would be a better place for all of the variables of a project.
 
-$color is an example of encapsulation.
 
-Mixins were used like @extend
-
-Whole new world of CSS.
-
-State as variables for media querires. Maybe there was a better way.
 
 
 

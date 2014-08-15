@@ -509,7 +509,7 @@ th {
 body {
   /*background-color: white; */
   /*@include background-image(linear-gradient(top, white, lightgray));*/
-  background: url(../../images/background5.png);
+  background: url(../../images/background.png);
   font-family: helvetica, sans-serif;
   postion: relative;
 }
@@ -601,10 +601,8 @@ body {
 /*Media Query Variables */
 /*Media Query Variables */
 /*Media Query Variables */
-/*Media Query Variables */
-/*Media Query Variables */
 /* Cyan Box */
-/* line 11, ../../sass/modules/_box-modules.scss */
+/* line 9, ../../sass/modules/_box-modules.scss */
 #box-cyan {
   display: block;
   height: 400px;
@@ -617,10 +615,9 @@ body {
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
-  /*@include slide-up-boxes;*/
 }
 @media screen and (max-width: 992px) {
-  /* line 11, ../../sass/modules/_box-modules.scss */
+  /* line 9, ../../sass/modules/_box-modules.scss */
   #box-cyan {
     height: 300px;
     width: 300px;
@@ -628,7 +625,7 @@ body {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 11, ../../sass/modules/_box-modules.scss */
+  /* line 9, ../../sass/modules/_box-modules.scss */
   #box-cyan {
     height: 200px;
     width: 200px;
@@ -636,7 +633,7 @@ body {
   }
 }
 @media screen and (max-height: 720px) {
-  /* line 11, ../../sass/modules/_box-modules.scss */
+  /* line 9, ../../sass/modules/_box-modules.scss */
   #box-cyan {
     height: 200px;
     width: 200px;
@@ -684,14 +681,12 @@ body {
   margin: 100px 0 -20px 0;
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
-  text-decoration: none;
 }
 @media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-cyan > .summary {
     height: 210px;
     margin: 100px -15px 0;
-    text-decoration: none;
   }
 }
 @media screen and (max-width: 320px), screen and (max-height: 720px) {
@@ -699,7 +694,6 @@ body {
   #box-cyan > .summary {
     height: 210px;
     margin: 200px -15px 0;
-    text-decoration: none;
   }
 }
 @media screen and (max-height: 720px) {
@@ -709,10 +703,6 @@ body {
   }
 }
 
-/* line 16, ../../sass/modules/_box-modules.scss */
-#box-cyan:hover {
-  /*@include slide-up-boxes-hover;*/
-}
 /* line 5, ../../sass/mixins/_box-hover.scss */
 #box-cyan:hover .color-name {
   margin-top: -200px;
@@ -738,7 +728,7 @@ body {
 }
 
 /* Magenta Box */
-/* line 23, ../../sass/modules/_box-modules.scss */
+/* line 22, ../../sass/modules/_box-modules.scss */
 #box-magenta {
   display: block;
   height: 400px;
@@ -751,10 +741,9 @@ body {
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
-  /*@include slide-up-boxes;*/
 }
 @media screen and (max-width: 992px) {
-  /* line 23, ../../sass/modules/_box-modules.scss */
+  /* line 22, ../../sass/modules/_box-modules.scss */
   #box-magenta {
     height: 300px;
     width: 300px;
@@ -762,7 +751,7 @@ body {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 23, ../../sass/modules/_box-modules.scss */
+  /* line 22, ../../sass/modules/_box-modules.scss */
   #box-magenta {
     height: 200px;
     width: 200px;
@@ -770,7 +759,7 @@ body {
   }
 }
 @media screen and (max-height: 720px) {
-  /* line 23, ../../sass/modules/_box-modules.scss */
+  /* line 22, ../../sass/modules/_box-modules.scss */
   #box-magenta {
     height: 200px;
     width: 200px;
@@ -818,14 +807,12 @@ body {
   margin: 100px 0 -20px 0;
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
-  text-decoration: none;
 }
 @media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-magenta > .summary {
     height: 210px;
     margin: 100px -15px 0;
-    text-decoration: none;
   }
 }
 @media screen and (max-width: 320px), screen and (max-height: 720px) {
@@ -833,7 +820,6 @@ body {
   #box-magenta > .summary {
     height: 210px;
     margin: 200px -15px 0;
-    text-decoration: none;
   }
 }
 @media screen and (max-height: 720px) {
@@ -843,10 +829,6 @@ body {
   }
 }
 
-/* line 28, ../../sass/modules/_box-modules.scss */
-#box-magenta:hover {
-  /*@include slide-up-boxes-hover;*/
-}
 /* line 5, ../../sass/mixins/_box-hover.scss */
 #box-magenta:hover .color-name {
   margin-top: -200px;
@@ -885,7 +867,6 @@ body {
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
-  /*@include slide-up-boxes;*/
 }
 @media screen and (max-width: 992px) {
   /* line 35, ../../sass/modules/_box-modules.scss */
@@ -952,14 +933,12 @@ body {
   margin: 100px 0 -20px 0;
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
-  text-decoration: none;
 }
 @media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-yellow > .summary {
     height: 210px;
     margin: 100px -15px 0;
-    text-decoration: none;
   }
 }
 @media screen and (max-width: 320px), screen and (max-height: 720px) {
@@ -967,7 +946,6 @@ body {
   #box-yellow > .summary {
     height: 210px;
     margin: 200px -15px 0;
-    text-decoration: none;
   }
 }
 @media screen and (max-height: 720px) {
@@ -977,10 +955,6 @@ body {
   }
 }
 
-/* line 40, ../../sass/modules/_box-modules.scss */
-#box-yellow:hover {
-  /*@include slide-up-boxes-hover;*/
-}
 /* line 5, ../../sass/mixins/_box-hover.scss */
 #box-yellow:hover .color-name {
   margin-top: -200px;
@@ -1019,7 +993,6 @@ body {
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
-  /*@include slide-up-boxes;*/
 }
 @media screen and (max-width: 992px) {
   /* line 47, ../../sass/modules/_box-modules.scss */
@@ -1086,14 +1059,12 @@ body {
   margin: 100px 0 -20px 0;
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
-  text-decoration: none;
 }
 @media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-black > .summary {
     height: 210px;
     margin: 100px -15px 0;
-    text-decoration: none;
   }
 }
 @media screen and (max-width: 320px), screen and (max-height: 720px) {
@@ -1101,7 +1072,6 @@ body {
   #box-black > .summary {
     height: 210px;
     margin: 200px -15px 0;
-    text-decoration: none;
   }
 }
 @media screen and (max-height: 720px) {
@@ -1111,10 +1081,6 @@ body {
   }
 }
 
-/* line 52, ../../sass/modules/_box-modules.scss */
-#box-black:hover {
-  /*@include slide-up-boxes-hover;*/
-}
 /* line 5, ../../sass/mixins/_box-hover.scss */
 #box-black:hover .color-name {
   margin-top: -200px;

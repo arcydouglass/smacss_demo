@@ -1,0 +1,20 @@
+
+@import "box";
+
+@mixin gradient-prototype ($color) {
+
+	@extend box;
+
+	height: 100px;
+	width: 550px;
+
+	@include background-image(linear-gradient(left, white, $color ));
+
+	/* Chrome, Safari, Opera */
+	-webkit-animation: transitionOpacity 1s;
+	
+	animation: transitionOpacity 1s;
+
+}
+
+

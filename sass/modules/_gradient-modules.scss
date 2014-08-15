@@ -1,0 +1,37 @@
+
+
+@import "../mixins/gradient-prototype";
+
+
+/* Cyan Gradient */
+#cyan-gradient {
+	@include gradient-prototype(cyan);
+	
+}
+
+/* Magneta Gradient */
+#magenta-gradient {
+	@include gradient-prototype(magenta);
+	
+}
+
+
+/* Yellow Gradient */
+#yellow-gradient {
+	@include gradient-prototype(yellow);
+	
+}
+
+
+/* Black Gradient */
+#black-gradient {
+	@include gradient-prototype(black);
+	
+}
+
+@include transition-opacity;
+
+
+
+
+

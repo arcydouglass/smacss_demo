@@ -509,7 +509,7 @@ th {
 body {
   /*background-color: white; */
   /*@include background-image(linear-gradient(top, white, lightgray));*/
-  background: url(../../images/background3.png);
+  background: url(../../images/background4.png);
   font-family: helvetica, sans-serif;
   postion: relative;
 }
@@ -521,6 +521,7 @@ body {
 
 /* Layout */
 /* Mixins */
+/*Media Query Variables */
 /*Media Query Variables */
 /*Media Query Variables */
 /*Media Query Variables */
@@ -1123,6 +1124,94 @@ body {
   #box-black:hover .color-name {
     margin-top: -210px;
   }
+}
+
+/* Define animation*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes transitionOpacity {
+  /* line 7, ../../sass/mixins/_transition-opacity.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 10, ../../sass/mixins/_transition-opacity.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* For everything else */
+@keyframes transitionOpacity {
+  /* line 17, ../../sass/mixins/_transition-opacity.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 20, ../../sass/mixins/_transition-opacity.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/*Media Query Variables */
+/* Cyan Gradient */
+/* line 7, ../../sass/modules/_gradient-modules.scss */
+#cyan-gradient {
+  height: 100px;
+  width: 550px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #00ffff));
+  background-image: -webkit-linear-gradient(left, #ffffff, #00ffff);
+  background-image: -moz-linear-gradient(left, #ffffff, #00ffff);
+  background-image: -o-linear-gradient(left, #ffffff, #00ffff);
+  background-image: linear-gradient(left, #ffffff, #00ffff);
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 1s;
+  animation: transitionOpacity 1s;
+}
+
+/* Magneta Gradient */
+/* line 13, ../../sass/modules/_gradient-modules.scss */
+#magenta-gradient {
+  height: 100px;
+  width: 550px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #ff00ff));
+  background-image: -webkit-linear-gradient(left, #ffffff, #ff00ff);
+  background-image: -moz-linear-gradient(left, #ffffff, #ff00ff);
+  background-image: -o-linear-gradient(left, #ffffff, #ff00ff);
+  background-image: linear-gradient(left, #ffffff, #ff00ff);
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 1s;
+  animation: transitionOpacity 1s;
+}
+
+/* Yellow Gradient */
+/* line 20, ../../sass/modules/_gradient-modules.scss */
+#yellow-gradient {
+  height: 100px;
+  width: 550px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #ffff00));
+  background-image: -webkit-linear-gradient(left, #ffffff, #ffff00);
+  background-image: -moz-linear-gradient(left, #ffffff, #ffff00);
+  background-image: -o-linear-gradient(left, #ffffff, #ffff00);
+  background-image: linear-gradient(left, #ffffff, #ffff00);
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 1s;
+  animation: transitionOpacity 1s;
+}
+
+/* Black Gradient */
+/* line 27, ../../sass/modules/_gradient-modules.scss */
+#black-gradient {
+  height: 100px;
+  width: 550px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(left, #ffffff, #000000);
+  background-image: -moz-linear-gradient(left, #ffffff, #000000);
+  background-image: -o-linear-gradient(left, #ffffff, #000000);
+  background-image: linear-gradient(left, #ffffff, #000000);
+  /* Chrome, Safari, Opera */
+  -webkit-animation: transitionOpacity 1s;
+  animation: transitionOpacity 1s;
 }
 
 /* Define animation*/

@@ -20,11 +20,13 @@
 @import "mixins/box-prototype";
 @import "mixins/slide-up-boxes";
 @import "mixins/slide-up-boxes-hover";
+@import "mixins/gradient-prototype";
 
 /* Modules */
 @import "modules/title";
 @import "modules/logo-animation";
 @import "modules/box-modules";
+@import "modules/gradient-modules";
 
 
 /* States */

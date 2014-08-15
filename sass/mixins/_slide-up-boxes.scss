@@ -12,14 +12,25 @@
 		-webkit-transition: all 0.2s linear; 
 		transition: all 0.2s linear; 
 
-		@media #{$media} and ($feature: $value) {  
+		@media #{$media} and ($feature: $value), #{$media} and ($feature2: $valueh) {  
 			height: $size;
 			margin-top: $size * 7/8;
 		 }  
 	  
-		@media #{$media} and ($feature: $value2) {  
+		@media #{$media} and ($feature: $value2), #{$media} and ($feature2: $valueh2) {  
 			height: $size2;
 			margin-top: $size2 * 7/8;
+			@if font-size == 1.4em {
+  				font-size: 1.2em;
+			}
+		}  
+	  
+		@media #{$media} and ($feature2: $valueh) {  
+			height: $size2;
+			margin-top: $size2 * 7/8;
+			@if font-size == 1.4em {
+  				font-size: 1.2em;
+			}
 		}  
 	}
 
@@ -33,14 +44,25 @@
 		background-color:rgba(72,72,72,0.5);
 		font-size: 1.0em;
 
-		@media #{$media} and ($feature: $value) {  
+		@media #{$media} and ($feature: $value), #{$media} and ($feature2: $valueh) {  
 			height: $size2 * 1.05;
 			margin: $size2/2 0 -$size/20 0;
 		 }  
 	  
-		@media #{$media} and ($feature: $value2) {  
+		@media #{$media} and ($feature: $value2), #{$media} and ($feature2: $valueh2){  
 			height: $size2 * 1.05;
 			margin: $size2/1 0 -$size/20 0;
+			@if font-size == 1.0em {
+  				font-size: .9em;
+			}
+		}  
+	  
+		@media #{$media} and ($feature2: $valueh){  
+			height: $size2 * 1.05;
+			margin: $size2/1 0 -$size/20 0;
+			@if font-size == 1.0em {
+  				font-size: .9em;
+			}
 		}  
 	}
 }

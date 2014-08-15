@@ -511,9 +511,10 @@ body {
   /*@include background-image(linear-gradient(top, white, lightgray));*/
   background: url(../../images/background3.png);
   font-family: helvetica, sans-serif;
+  postion: relative;
 }
 
-/* line 10, ../../sass/base/_base.scss */
+/* line 11, ../../sass/base/_base.scss */
 .container {
   max-width: 960px;
 }
@@ -606,6 +607,7 @@ body {
   color: gray;
   overflow: hidden;
   background: cyan;
+  /*@include background-image(linear-gradient(top, $color, ));*/
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
@@ -627,6 +629,14 @@ body {
     margin: 15px;
   }
 }
+@media screen and (max-height: 720px) {
+  /* line 11, ../../sass/modules/_box-modules.scss */
+  #box-cyan {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
 /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
 #box-cyan > .color-name {
   height: 400px;
@@ -638,21 +648,28 @@ body {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
   #box-cyan > .color-name {
     height: 300px;
     margin-top: 262.5px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px), screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
   #box-cyan > .color-name {
     height: 200px;
     margin-top: 175px;
   }
 }
-/* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-height: 720px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-cyan > .color-name {
+    height: 200px;
+    margin-top: 175px;
+  }
+}
+/* line 38, ../../sass/mixins/_slide-up-boxes.scss */
 #box-cyan > .summary {
   height: 100px;
   text-align: center;
@@ -662,15 +679,22 @@ body {
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
 }
-@media screen and (max-width: 992px) {
-  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-width: 992px), screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-cyan > .summary {
     height: 210px;
     margin: 100px -15px 0;
   }
 }
-@media screen and (max-width: 320px) {
-  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-width: 320px), screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-cyan > .summary {
+    height: 210px;
+    margin: 200px -15px 0;
+  }
+}
+@media screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-cyan > .summary {
     height: 210px;
     margin: 200px -15px 0;
@@ -698,6 +722,12 @@ body {
     margin-top: -210px;
   }
 }
+@media screen and (max-height: 720px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-cyan:hover .color-name {
+    margin-top: -210px;
+  }
+}
 
 /* Magenta Box */
 /* line 23, ../../sass/modules/_box-modules.scss */
@@ -709,6 +739,7 @@ body {
   color: gray;
   overflow: hidden;
   background: magenta;
+  /*@include background-image(linear-gradient(top, $color, ));*/
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
@@ -730,6 +761,14 @@ body {
     margin: 15px;
   }
 }
+@media screen and (max-height: 720px) {
+  /* line 23, ../../sass/modules/_box-modules.scss */
+  #box-magenta {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
 /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
 #box-magenta > .color-name {
   height: 400px;
@@ -741,21 +780,28 @@ body {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
   #box-magenta > .color-name {
     height: 300px;
     margin-top: 262.5px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px), screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
   #box-magenta > .color-name {
     height: 200px;
     margin-top: 175px;
   }
 }
-/* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-height: 720px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-magenta > .color-name {
+    height: 200px;
+    margin-top: 175px;
+  }
+}
+/* line 38, ../../sass/mixins/_slide-up-boxes.scss */
 #box-magenta > .summary {
   height: 100px;
   text-align: center;
@@ -765,15 +811,22 @@ body {
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
 }
-@media screen and (max-width: 992px) {
-  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-width: 992px), screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-magenta > .summary {
     height: 210px;
     margin: 100px -15px 0;
   }
 }
-@media screen and (max-width: 320px) {
-  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-width: 320px), screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-magenta > .summary {
+    height: 210px;
+    margin: 200px -15px 0;
+  }
+}
+@media screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-magenta > .summary {
     height: 210px;
     margin: 200px -15px 0;
@@ -801,6 +854,12 @@ body {
     margin-top: -210px;
   }
 }
+@media screen and (max-height: 720px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-magenta:hover .color-name {
+    margin-top: -210px;
+  }
+}
 
 /* Yellow Box */
 /* line 35, ../../sass/modules/_box-modules.scss */
@@ -812,6 +871,7 @@ body {
   color: gray;
   overflow: hidden;
   background: yellow;
+  /*@include background-image(linear-gradient(top, $color, ));*/
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
@@ -833,6 +893,14 @@ body {
     margin: 15px;
   }
 }
+@media screen and (max-height: 720px) {
+  /* line 35, ../../sass/modules/_box-modules.scss */
+  #box-yellow {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
 /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
 #box-yellow > .color-name {
   height: 400px;
@@ -844,21 +912,28 @@ body {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
   #box-yellow > .color-name {
     height: 300px;
     margin-top: 262.5px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px), screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
   #box-yellow > .color-name {
     height: 200px;
     margin-top: 175px;
   }
 }
-/* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-height: 720px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-yellow > .color-name {
+    height: 200px;
+    margin-top: 175px;
+  }
+}
+/* line 38, ../../sass/mixins/_slide-up-boxes.scss */
 #box-yellow > .summary {
   height: 100px;
   text-align: center;
@@ -868,15 +943,22 @@ body {
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
 }
-@media screen and (max-width: 992px) {
-  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-width: 992px), screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-yellow > .summary {
     height: 210px;
     margin: 100px -15px 0;
   }
 }
-@media screen and (max-width: 320px) {
-  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-width: 320px), screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-yellow > .summary {
+    height: 210px;
+    margin: 200px -15px 0;
+  }
+}
+@media screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-yellow > .summary {
     height: 210px;
     margin: 200px -15px 0;
@@ -904,6 +986,12 @@ body {
     margin-top: -210px;
   }
 }
+@media screen and (max-height: 720px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-yellow:hover .color-name {
+    margin-top: -210px;
+  }
+}
 
 /* Black Box */
 /* line 47, ../../sass/modules/_box-modules.scss */
@@ -915,6 +1003,7 @@ body {
   color: gray;
   overflow: hidden;
   background: black;
+  /*@include background-image(linear-gradient(top, $color, ));*/
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 2s;
   animation: transitionOpacity 2s;
@@ -936,6 +1025,14 @@ body {
     margin: 15px;
   }
 }
+@media screen and (max-height: 720px) {
+  /* line 47, ../../sass/modules/_box-modules.scss */
+  #box-black {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
 /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
 #box-black > .color-name {
   height: 400px;
@@ -947,21 +1044,28 @@ body {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
   #box-black > .color-name {
     height: 300px;
     margin-top: 262.5px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px), screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
   #box-black > .color-name {
     height: 200px;
     margin-top: 175px;
   }
 }
-/* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-height: 720px) {
+  /* line 5, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-black > .color-name {
+    height: 200px;
+    margin-top: 175px;
+  }
+}
+/* line 38, ../../sass/mixins/_slide-up-boxes.scss */
 #box-black > .summary {
   height: 100px;
   text-align: center;
@@ -971,15 +1075,22 @@ body {
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
 }
-@media screen and (max-width: 992px) {
-  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-width: 992px), screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-black > .summary {
     height: 210px;
     margin: 100px -15px 0;
   }
 }
-@media screen and (max-width: 320px) {
-  /* line 27, ../../sass/mixins/_slide-up-boxes.scss */
+@media screen and (max-width: 320px), screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
+  #box-black > .summary {
+    height: 210px;
+    margin: 200px -15px 0;
+  }
+}
+@media screen and (max-height: 720px) {
+  /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-black > .summary {
     height: 210px;
     margin: 200px -15px 0;
@@ -1002,6 +1113,12 @@ body {
   }
 }
 @media screen and (max-width: 320px) {
+  /* line 5, ../../sass/mixins/_box-hover.scss */
+  #box-black:hover .color-name {
+    margin-top: -210px;
+  }
+}
+@media screen and (max-height: 720px) {
   /* line 5, ../../sass/mixins/_box-hover.scss */
   #box-black:hover .color-name {
     margin-top: -210px;

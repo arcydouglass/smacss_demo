@@ -14,6 +14,10 @@
 			margin-top: -$size2 * 1.05; 
 		}  
 
+		@media #{$media} and ($feature2: $valueh) {  
+			margin-top: -$size2 * 1.05; 
+		 }  
+
 	}
 }
 

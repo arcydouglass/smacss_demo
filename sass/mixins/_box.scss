@@ -19,5 +19,12 @@
 		width: $size2;
 		margin: $size/20; 
 	  }  
+
+	  @media #{$media} and ($feature2: $valueh) {  
+		height: $size2;
+		width: $size2;
+		margin: $size/20;
+	 }  
+  
 }
 

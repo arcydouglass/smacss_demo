@@ -7,6 +7,7 @@
 	@include box;
 
 	background: $color;
+	/*@include background-image(linear-gradient(top, $color, ));*/
 
 	/* Chrome, Safari, Opera */
 	-webkit-animation: transitionOpacity 2s;

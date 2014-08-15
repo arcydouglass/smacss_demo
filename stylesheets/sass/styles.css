@@ -509,12 +509,17 @@ th {
 body {
   /*background-color: white; */
   /*@include background-image(linear-gradient(top, white, lightgray));*/
-  background: url(../../images/background4.png);
+  background: url(../../images/background5.png);
   font-family: helvetica, sans-serif;
   postion: relative;
 }
 
 /* line 11, ../../sass/base/_base.scss */
+.no-decoration, a:link, a:visited {
+  text-decoration: none;
+}
+
+/* line 15, ../../sass/base/_base.scss */
 .container {
   max-width: 960px;
 }
@@ -544,7 +549,7 @@ body {
 
 /* line 15, ../../sass/modules/_title.scss */
 .title h2 {
-  width: 900px;
+  width: 835px;
   font-size: 1.5em;
 }
 @media screen and (max-width: 992px) {
@@ -679,12 +684,14 @@ body {
   margin: 100px 0 -20px 0;
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
+  text-decoration: none;
 }
 @media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-cyan > .summary {
     height: 210px;
     margin: 100px -15px 0;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 320px), screen and (max-height: 720px) {
@@ -692,13 +699,13 @@ body {
   #box-cyan > .summary {
     height: 210px;
     margin: 200px -15px 0;
+    text-decoration: none;
   }
 }
 @media screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-cyan > .summary {
-    height: 210px;
-    margin: 200px -15px 0;
+    display: none;
   }
 }
 
@@ -811,12 +818,14 @@ body {
   margin: 100px 0 -20px 0;
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
+  text-decoration: none;
 }
 @media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-magenta > .summary {
     height: 210px;
     margin: 100px -15px 0;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 320px), screen and (max-height: 720px) {
@@ -824,13 +833,13 @@ body {
   #box-magenta > .summary {
     height: 210px;
     margin: 200px -15px 0;
+    text-decoration: none;
   }
 }
 @media screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-magenta > .summary {
-    height: 210px;
-    margin: 200px -15px 0;
+    display: none;
   }
 }
 
@@ -943,12 +952,14 @@ body {
   margin: 100px 0 -20px 0;
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
+  text-decoration: none;
 }
 @media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-yellow > .summary {
     height: 210px;
     margin: 100px -15px 0;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 320px), screen and (max-height: 720px) {
@@ -956,13 +967,13 @@ body {
   #box-yellow > .summary {
     height: 210px;
     margin: 200px -15px 0;
+    text-decoration: none;
   }
 }
 @media screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-yellow > .summary {
-    height: 210px;
-    margin: 200px -15px 0;
+    display: none;
   }
 }
 
@@ -1075,12 +1086,14 @@ body {
   margin: 100px 0 -20px 0;
   background-color: rgba(72, 72, 72, 0.5);
   font-size: 1.0em;
+  text-decoration: none;
 }
 @media screen and (max-width: 992px), screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-black > .summary {
     height: 210px;
     margin: 100px -15px 0;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 320px), screen and (max-height: 720px) {
@@ -1088,13 +1101,13 @@ body {
   #box-black > .summary {
     height: 210px;
     margin: 200px -15px 0;
+    text-decoration: none;
   }
 }
 @media screen and (max-height: 720px) {
   /* line 38, ../../sass/mixins/_slide-up-boxes.scss */
   #box-black > .summary {
-    height: 210px;
-    margin: 200px -15px 0;
+    display: none;
   }
 }
 
@@ -1157,6 +1170,12 @@ body {
 /* Cyan Gradient */
 /* line 7, ../../sass/modules/_gradient-modules.scss */
 #cyan-gradient {
+  display: block;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  color: gray;
+  overflow: hidden;
   height: 100px;
   width: 550px;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #00ffff));
@@ -1168,10 +1187,40 @@ body {
   -webkit-animation: transitionOpacity 1s;
   animation: transitionOpacity 1s;
 }
+@media screen and (max-width: 992px) {
+  /* line 7, ../../sass/modules/_gradient-modules.scss */
+  #cyan-gradient {
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 7, ../../sass/modules/_gradient-modules.scss */
+  #cyan-gradient {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
+@media screen and (max-height: 720px) {
+  /* line 7, ../../sass/modules/_gradient-modules.scss */
+  #cyan-gradient {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
 
 /* Magneta Gradient */
 /* line 13, ../../sass/modules/_gradient-modules.scss */
 #magenta-gradient {
+  display: block;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  color: gray;
+  overflow: hidden;
   height: 100px;
   width: 550px;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #ff00ff));
@@ -1183,10 +1232,40 @@ body {
   -webkit-animation: transitionOpacity 1s;
   animation: transitionOpacity 1s;
 }
+@media screen and (max-width: 992px) {
+  /* line 13, ../../sass/modules/_gradient-modules.scss */
+  #magenta-gradient {
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 13, ../../sass/modules/_gradient-modules.scss */
+  #magenta-gradient {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
+@media screen and (max-height: 720px) {
+  /* line 13, ../../sass/modules/_gradient-modules.scss */
+  #magenta-gradient {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
 
 /* Yellow Gradient */
 /* line 20, ../../sass/modules/_gradient-modules.scss */
 #yellow-gradient {
+  display: block;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  color: gray;
+  overflow: hidden;
   height: 100px;
   width: 550px;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #ffff00));
@@ -1198,10 +1277,40 @@ body {
   -webkit-animation: transitionOpacity 1s;
   animation: transitionOpacity 1s;
 }
+@media screen and (max-width: 992px) {
+  /* line 20, ../../sass/modules/_gradient-modules.scss */
+  #yellow-gradient {
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 20, ../../sass/modules/_gradient-modules.scss */
+  #yellow-gradient {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
+@media screen and (max-height: 720px) {
+  /* line 20, ../../sass/modules/_gradient-modules.scss */
+  #yellow-gradient {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
 
 /* Black Gradient */
 /* line 27, ../../sass/modules/_gradient-modules.scss */
 #black-gradient {
+  display: block;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  color: gray;
+  overflow: hidden;
   height: 100px;
   width: 550px;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #000000));
@@ -1212,6 +1321,30 @@ body {
   /* Chrome, Safari, Opera */
   -webkit-animation: transitionOpacity 1s;
   animation: transitionOpacity 1s;
+}
+@media screen and (max-width: 992px) {
+  /* line 27, ../../sass/modules/_gradient-modules.scss */
+  #black-gradient {
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 27, ../../sass/modules/_gradient-modules.scss */
+  #black-gradient {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
+}
+@media screen and (max-height: 720px) {
+  /* line 27, ../../sass/modules/_gradient-modules.scss */
+  #black-gradient {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+  }
 }
 
 /* Define animation*/

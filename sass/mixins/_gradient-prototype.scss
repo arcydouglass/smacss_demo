@@ -3,7 +3,7 @@
 
 @mixin gradient-prototype ($color) {
 
-	@extend box;
+	@include box;
 
 	height: 100px;
 	width: 550px;

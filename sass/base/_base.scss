@@ -3,14 +3,20 @@
 body {
 	/*background-color: white; */
 	/*@include background-image(linear-gradient(top, white, lightgray));*/
-	background: url(../../images/background4.png);
+	background: url(../../images/background5.png);
 	font-family: helvetica, sans-serif;
 	postion: relative;
+}
+
+.no-decoration, a:link, a:visited {
+    text-decoration: none;
 }
 
 .container {
   max-width: 960px;
 }
+
+
 
 
 

@@ -36,6 +36,20 @@ I found that my HTML classes were more descriptive to represent the added specif
 
 Still, this was a huge improvement over standard CSS.
 
+Talk about maps and lists.
+
+Reduce repetition.
+
+$color is an example of encapsulation.
+
+Mixins were used like @extend
+
+Whole new world of CSS.
+
+State as variables for media querires. Maybe there was a better way.
+
+
+
 
 
 
